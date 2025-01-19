@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    /* width:100%; */
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p  {
+    margin:0;
+    padding:0;
+}
+/* universal css */
+body{
+    font-family: "Lato", serif;
+    
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+/* shared css */
+.flex{
+    display: flex;
+}
+.primary-btn{
+    background: rgba(229, 84, 115, 1);
+    padding:20px 43px;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+}
+.primary-btn a{
+    color:#fff;
+    font-size: 1.25rem;
+    font-weight:700;
+    line-height: 1.5rem;
+}
+.button-conainer:hover a {
+    color: rgba(229, 84, 115, 1);
+    transition: 0.5s ease-in-out;
+}
+.button-conainer:hover .primary-btn {
+    background: #fff;
+    border:2px solid rgba(229, 84, 115, 1);
+    transition: 0.5s ease-in-out;
+}
+/* banner part started */
+#banner{
+    background:rgba(229, 84, 115, 0.1);
+}
+.banner-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content h1{
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: rgba(39, 39, 39, 1);
+    max-width: 708px;
+}
+.banner-content p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color:rgba(39, 39, 39, 0.6);
+    max-width: 708px;
+    padding: 32px 0px;
+}
+.banner-image img{
+    max-width: 635px;
+}
+/* responsive css */
+@media screen and (min-width: 576px){
+    .banner-container{
+        flex-direction: column;
+    }
+}
