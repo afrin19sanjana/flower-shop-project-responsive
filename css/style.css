@@ -119,3 +119,183 @@ img{
     }
 
  }
+ /* feature part starts */
+ .feature{
+    text-align: center;
+ }
+ .feature-content{
+    justify-content: space-between;
+    align-items: center;
+ }
+ .feature h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: rgba(39, 39, 39, 1);
+    margin-top: 178px;
+ }
+ .feature p {
+    font-weight:400;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: rgba(39, 39, 39, 0.6);
+    padding:24px 0px 48px 0px;
+
+ }
+ .feature-content img{
+    width: 100%;
+    max-height: 538px;
+ }
+ 
+.feature-content .pink-tulip{
+   border-radius:300px 300px 0px 0px;
+   background-color: rgba(167, 33, 98, 0.15);
+}
+.pink-tulip img {
+    padding:110px 78px 0px 76px;
+}
+.feature-content .flower-bun{
+    border-radius:300px 300px 0px 0px;
+   background-color: rgba(5, 151, 160, 0.15)
+}
+.flower-bun{
+    padding:150px 50px 20px 50px; 
+}
+.feature-content .yellow-tulip{
+    border-radius:300px 300px 0px 0px;
+   background-color: rgba(71, 125, 17, 0.15);
+}
+.yellow-tulip img {
+    padding:90px 78px 0px 76px;
+}
+.feature-title p {
+    font-weight:700;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    color: rgba(39, 39, 39, 1);
+}
+ /* feature part ends */
+ /* responsive feature part starts  */
+ @media (max-width: 575.98px){
+    .feature-content{
+        flex-direction: column;
+    }
+    .pink-tulip img {
+        padding:50px 20px 0px 20px
+    }
+    .flower-bun{
+        padding:100px 15px 40px 15px; 
+    }.yellow-tulip img {
+        padding:40px 18px 0px 18px;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 768px){
+    .feature-content{
+        flex-direction: column;
+    }
+    .pink-tulip img {
+        padding:50px 20px 0px 20px
+    }
+    .flower-bun{
+        padding:100px 15px 40px 15px; 
+    }.yellow-tulip img {
+        padding:40px 18px 0px 18px;
+    }
+ }
+ @media (min-width: 769px) and (max-width:991px) {
+    .feature-content{
+        flex-direction: column;
+    }
+    .pink-tulip img {
+        padding:60px 20px 40px 20px;
+    }
+    .flower-bun{
+        padding:100px 15px 40px 15px; 
+    }.yellow-tulip img {
+        padding:40px 18px 0px 18px;
+    }
+ }
+ @media (min-width: 992px) and (max-width:1199px) {
+    .feature-content{
+        flex-direction: column;
+    }
+    .pink-tulip img {
+        padding:60px 20px 0px 20px;
+    }
+    .flower-bun{
+        padding:100px 15px 40px 15px; 
+    }.yellow-tulip img {
+        padding:40px 18px 0px 18px;
+    }
+ }
+  /* responsive feature part ends */
+  /* feature-secondary starts */
+  .feature-secondary{
+    background-color: rgba(39, 39, 39, 0.05);
+    justify-content: space-evenly;
+    align-items: center;
+    padding:86px 0px;
+  }
+  .feature-secondary .delivery{
+    max-width: 88px;
+    margin-left: 130px;
+  }
+  .feature-secondary .boquet{
+    max-width: 88px;
+    margin-left: 100px;
+  }
+  .feature-secondary .call{
+    max-width: 88px;
+    margin-left: 70px;
+  }
+  .feature-secondary p{
+    font-weight:600;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    color: rgba(39, 39, 39, 0.8);
+    text-align: center;
+    padding-top: 24px;
+  }
+  /* feature-secondary ends */
+  /* .feature-secondary responsive starts */
+  @media (max-width: 575.98px){
+  .feature-secondary{
+    flex-direction: column;
+  }
+  .secondary-box{
+    margin-bottom: 40px;
+  }
+  .feature-secondary-content{
+    justify-content: center;
+  }
+  .feature-secondary .delivery{
+   margin-left: 100px;
+  }
+  .feature-secondary .call{
+    margin-right: 70px;
+  }
+  }
+  @media (min-width: 576px) and (max-width: 768px){
+    .feature-secondary{
+        flex-direction: column;
+      }
+      .secondary-box{
+        margin-bottom: 40px;
+      }
+      .feature-secondary-content{
+        justify-content: center;
+      }
+     
+      .feature-secondary .call{
+        margin-right: 100px;
+      }
+  }
+  @media (min-width: 769px) and (max-width:991px){
+
+  }
+  @media (min-width: 992px) and (max-width:1190px) {
+    .feature-secondary .call{
+        margin-right: 100px;
+      }
+  }
+  /*  .feature-secondary responsive ends */
