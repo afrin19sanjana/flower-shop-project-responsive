@@ -62,6 +62,15 @@ img{
     border:2px solid rgba(229, 84, 115, 1);
     transition: 0.5s ease-in-out;
 }
+.sale-content p,
+.instagram p
+{
+  color:rgba(39, 39, 39, 0.6);
+  font-weight:400 ;
+  font-size: 1.1rem; 
+  line-height: 1.8rem;
+  margin: 24px 0px 32px 0px;
+}
 /* banner part started */
 #banner{
     background:rgba(229, 84, 115, 0.1);
@@ -299,3 +308,66 @@ img{
       }
   }
   /*  .feature-secondary responsive ends */
+  /* sale part starts */
+  .sale{
+    background:rgba(229, 84, 115, 0.05);
+    margin: 128px 0px;
+  }
+  .sale-image img{
+    max-width: 318px;
+    padding:100px 0px;
+  }
+  .sale-content{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sale-content h2 , span {
+    font-weight:800 ;
+    font-size: 2.5rem; 
+    line-height: 3rem;
+  }
+ 
+  .sale-content h2 {
+   color: rgba(39, 39, 39, 1);
+  }
+  .sale-content span{
+   color: rgba(229, 84, 115, 1);
+  }
+  /* sale part ends */
+  /* sale part responsive start */
+  @media (max-width: 575.98px){
+  .sale-content {
+    flex-direction: column;
+  }
+  }
+  /* sale part rsponsive ends */
+  /* instagram part starts */
+  .instagram-content{
+    text-align: center;
+  }
+  .insta-image-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+  }
+  .instagram h2{
+    color:rgba(39, 39, 39, 1);
+    font-weight: 800;
+     font-size: 2.5rem;
+     line-height: 3rem;
+  }
+  /* instagram part ends */
+  /* instagram part responsive starts */
+  @media (max-width: 575.98px){
+    .insta-image-container{
+     grid-template-columns: repeat(1, 1fr);
+    }
+  
+  }
+  @media (min-width: 576px) and (max-width: 768px){
+    .insta-image-container{
+        grid-template-columns: repeat(2, 1fr);
+       }
+     
+  }
+  /* instagram part responsive ends */
