@@ -136,6 +136,7 @@ img{
  .feature-content{
     justify-content: space-between;
     align-items: center;
+    gap:20px;
  }
  .feature h2 {
     font-weight: 800;
@@ -202,6 +203,7 @@ img{
  @media (min-width: 576px) and (max-width: 768px){
     .feature-content{
         flex-direction: column;
+
     }
     .pink-tulip img {
         padding:50px 20px 0px 20px
