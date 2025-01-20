@@ -63,7 +63,8 @@ img{
     transition: 0.5s ease-in-out;
 }
 .sale-content p,
-.instagram p
+.instagram p,
+.latest-deal p
 {
   color:rgba(39, 39, 39, 0.6);
   font-weight:400 ;
@@ -342,6 +343,9 @@ img{
   }
   /* sale part rsponsive ends */
   /* instagram part starts */
+  .instagram{
+    margin-bottom: 128px;
+  }
   .instagram-content{
     text-align: center;
   }
@@ -368,6 +372,96 @@ img{
     .insta-image-container{
         grid-template-columns: repeat(2, 1fr);
        }
-     
   }
   /* instagram part responsive ends */
+  /* latest deals starts */
+  .latest-deal{
+    background: url(../assets/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:122px 0px 122px 0px; 
+    text-align: center;
+    margin-bottom: 128px;
+  }
+  .latest-deal h2{
+    color:rgba(39, 39, 39, 1);
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height:3rem;
+  }
+  .latest-deal-content{
+    justify-content: center;
+    gap:16px;
+  }
+  .latest-deal-input{
+    width: 700px;
+    height: 64px;
+    border:none;
+    border-radius: 8px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    color:rgba(39, 39, 39, 0.6);
+  }
+  /* latest deals ends */
+  /* latest-deal responsive starts */
+  @media (max-width: 575.98px){
+    .latest-deal-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .latest-deal-input{
+      width:80%;
+      margin:0px 40px 0px 20px;
+    }
+    .secondary-btn{
+        margin-left: 40px;
+    }
+    .latest-deal-input{
+        padding-left: 10px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 768px){
+    .latest-deal-input{
+        width:100%;
+        margin:0px 40px 0px 0px;
+      }
+  }
+  @media (min-width: 992px) and (max-width:1190px){
+    .latest-deal-input{
+        width:100%;
+        margin:0px 40px 0px 0px;
+      }
+  }
+  /* latest deal responsive ends */
+  /* footer part started */
+  .flower-shop{
+    background: rgba(17, 16, 16, 1);
+    text-align: center;
+    padding:128px 0px;
+  }
+  .flower-shop h2{
+    color:rgba(229, 84, 115, 1);
+    font-size:3rem ;
+    font-weight: 800;
+    line-height: 3.5rem;
+  }
+  .flower-shop span{
+    color:#ffff;
+  }
+  .flower-shop p{
+    color:rgba(255, 255, 255, 0.9);
+    font-weight:400 ;
+    font-size: 1.1rem; 
+    line-height: 1.8rem;
+    margin: 24px 0px 32px 0px;
+  }
+  .flower-shop small{
+    color:rgba(255, 255, 255, 0.9);
+    font-weight:400 ;
+    font-size: 1.1rem; 
+    line-height: 1.8rem;
+  }
+  /* footer part end */
